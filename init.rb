@@ -14,9 +14,9 @@ Redmine::Plugin.register :redmine_exception_handler do
   requires_redmine :version_or_higher => '2.0.0'
   
   settings :default => {
-    'exception_handler_recipients' => 'phillmv@okayfail.com',
+    'exception_handler_recipients' => 'phillmv@okayfail.com, monica.kochofar@bell.ca',
     'exception_handler_sender_address' => 'RDQ3 Exception <noreply@rdq.tdlab.ca>',
-    'exception_handler_prefix' => "[RDQ3 #{Rails.env}]",
+    'exception_handler_prefix' => "[RDQ3 #{Rails.env}] ",
     'exception_handler_email_format' => 'text'
   }, :partial => 'settings/exception_handler_settings'
   
